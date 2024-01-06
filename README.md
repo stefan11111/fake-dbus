@@ -1,3 +1,3 @@
-# fake-gtk2
-placeholder gtk2 shared libraries and headers
-The main purpose of this repo is to get palemoon to build without gtk2.
+# fake-dbus
+Random hacky project I found on my pc.
+May be useful to someone, somewhere, sometime
