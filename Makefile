@@ -5,7 +5,7 @@ XLDFLAGS = ${LDFLAGS} -shared -Wl
 
 LIBDIR ?= /lib64
 
-all: libdbus-1.so.3
+all: libdbus-glib-1.so.2 libdbus-1.so.3
 
 .c.o:
 	${CC} ${XCFLAGS} -c -o $@ $<
@@ -16,7 +16,7 @@ libdbus-glib-1.so.2:
 libdbus-1.so.3:
 	${CC} ${XCFLAGS} libdbus-1.c -o libdbus-1.so.3 ${XLDFLAGS},-soname,libdbus-1.so.3
 
-install: libdbus-glib-1.so.2 libdbus-1.so.3
+install: libdbus-1.so.3
 	mkdir -p ${DESTDIR}/usr${LIBDIR}
 	cp -f libdbus-glib-1.so.2 ${DESTDIR}/usr${LIBDIR}
 	cp -f libdbus-1.so.3 ${DESTDIR}/usr${LIBDIR}
