@@ -5,7 +5,7 @@ XLDFLAGS = ${LDFLAGS} -shared -Wl
 
 LIBDIR ?= /lib64
 
-all: libdbus-glib-1.so.2 libdbus-1.so.3
+all: libdbus-1.so.3
 
 .c.o:
 	${CC} ${XCFLAGS} -c -o $@ $<
