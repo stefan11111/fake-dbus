@@ -25,6 +25,27 @@ install: libdbus-1.so.3
 	cp -f dbus-1.pc ${DESTDIR}/usr${LIBDIR}/pkgconfig
 	mkdir -p ${DESTDIR}/usr/include/dbus-1.0/dbus
 	cp -rf headers/* ${DESTDIR}/usr/include/dbus-1.0/dbus
+	mkdir -p ${DESTDIR}/usr/bin
+
+	touch ${DESTDIR}/usr/bin/dbus-cleanup-sockets
+	chown 755 ${DESTDIR}/usr/bin/dbus-cleanup-sockets
+	touch ${DESTDIR}/usr/bin/dbus-daemon
+	chown 755 ${DESTDIR}/usr/bin/dbus-daemon
+	touch ${DESTDIR}/usr/bin/dbus-launch
+	chown 755 ${DESTDIR}/usr/bin/dbus-launch
+	touch ${DESTDIR}/usr/bin/dbus-monitor
+	chown 755 ${DESTDIR}/usr/bin/dbus-monitor
+	touch ${DESTDIR}/usr/bin/dbus-run-session
+	chown 755 ${DESTDIR}/usr/bin/dbus-run-session
+	touch ${DESTDIR}/usr/bin/dbus-send
+	chown 755 ${DESTDIR}/usr/bin/dbus-send
+	touch ${DESTDIR}/usr/bin/dbus-test-tool
+	chown 755 ${DESTDIR}/usr/bin/dbus-test-tool
+	touch ${DESTDIR}/usr/bin/dbus-update-activation-environment
+	chown 755 ${DESTDIR}/usr/bin/dbus-update-activation-environment
+	touch ${DESTDIR}/usr/bin/dbus-uuidgen
+	chown 755 ${DESTDIR}/usr/bin/dbus-uuidgen
+
 uninstall:
 	rm -rf ${DESTDIR}/usr/include/dbus-1.0 ${DESTDIR}/usr${LIBDIR}/libdbus-glib-1.so.2 ${DESTDIR}/usr${LIBDIR}/libdbus-1.so.3 ${DESTDIR}/usr${LIBDIR}/libdbus-1.so ${DESTDIR}/usr${LIBDIR}/pkgconfig/dbus-1.pc
 
