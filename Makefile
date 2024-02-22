@@ -1,7 +1,7 @@
 .POSIX:
 
 XCFLAGS = ${CPPFLAGS} ${CFLAGS} -nostdlib -std=c99 -fPIC -Wall -Wno-pedantic
-XLDFLAGS = ${LDFLAGS} -shared -Wl
+XLDFLAGS = ${LDFLAGS} -shared -Wl,--version-script Version -Wl
 
 LIBDIR ?= /lib64
 

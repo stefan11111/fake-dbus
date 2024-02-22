@@ -113,3 +113,4 @@ void* dbus_signature_iter_get_current_type() { return 0; }
 void* dbus_message_iter_append_fixed_array() { return 0; }
 void* dbus_message_set_interface() { return 0; }
 void* dbus_free_string_array() { return 0; }
+void* _dbus_ensure_standard_fds() { return 0; }
