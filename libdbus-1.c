@@ -97,6 +97,7 @@ void* dbus_bus_get_private() { return 0; }
 void* dbus_connection_set_exit_on_disconnect () { return 0; }
 void* dbus_shutdown() { return 0; }
 void* dbus_signature_validate() { return 0; }
+void* dbus_signature_validate_single() { return 0; }
 void* dbus_signature_iter_next() { return 0; }
 void* dbus_message_iter_abandon_container() { return 0; }
 void* dbus_pending_call_block() { return 0; }
@@ -114,3 +115,9 @@ void* dbus_message_iter_append_fixed_array() { return 0; }
 void* dbus_message_set_interface() { return 0; }
 void* dbus_free_string_array() { return 0; }
 void* _dbus_ensure_standard_fds() { return 0; }
+void* dbus_validate_path() { return 0; }
+void* dbus_validate_member() { return 0; }
+void* dbus_validate_interface() { return 0; }
+void* dbus_validate_error_name() { return 0; }
+void* dbus_validate_bus_name() { return 0; }
+void* dbus_validate_utf8() { return 0; }
