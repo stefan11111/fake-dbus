@@ -97,6 +97,7 @@ void dbus_bus_get_private() {}
 void dbus_connection_set_exit_on_disconnect () {}
 void dbus_shutdown() {}
 void dbus_signature_validate() {}
+void dbus_signature_validate_single() {}
 void dbus_signature_iter_next() {}
 void dbus_message_iter_abandon_container() {}
 void dbus_pending_call_block() {}
@@ -113,3 +114,10 @@ void dbus_signature_iter_get_current_type() {}
 void dbus_message_iter_append_fixed_array() {}
 void dbus_message_set_interface() {}
 void dbus_free_string_array() {}
+void _dbus_ensure_standard_fds() {}
+void dbus_validate_path() {}
+void dbus_validate_member() {}
+void dbus_validate_interface() {}
+void dbus_validate_error_name() {}
+void dbus_validate_bus_name() {}
+void dbus_validate_utf8() {}
