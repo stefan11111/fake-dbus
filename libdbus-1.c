@@ -121,3 +121,10 @@ void* dbus_validate_interface() { return 0; }
 void* dbus_validate_error_name() { return 0; }
 void* dbus_validate_bus_name() { return 0; }
 void* dbus_validate_utf8() { return 0; }
+void* dbus_connection_set_dispatch_status_function() { return 0; }
+void* dbus_message_type_to_string() { return 0; }
+void* dbus_connection_try_register_fallback() { return 0; }
+void* dbus_message_set_member() { return 0; }
+void* dbus_get_version() { return 0; }
+void* dbus_message_get_serial() { return 0; }
+void* dbus_message_get_reply_serial() { return 0; }
