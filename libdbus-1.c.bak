@@ -121,3 +121,10 @@ void dbus_validate_interface() {}
 void dbus_validate_error_name() {}
 void dbus_validate_bus_name() {}
 void dbus_validate_utf8() {}
+void dbus_connection_set_dispatch_status_function() {}
+void dbus_message_type_to_string() {}
+void dbus_connection_try_register_fallback() {}
+void dbus_message_set_member() {}
+void dbus_get_version() {}
+void dbus_message_get_serial() {}
+void dbus_message_get_reply_serial() {}
